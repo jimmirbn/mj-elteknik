@@ -1,0 +1,9 @@
+/// 'Extra Small' : default
+/// 'Small' : Tablet in portrait
+/// 'Medium' : Tablet in Landscape and many laptops
+/// 'Large' : Desktops and other large screens
+$breakpoints: (
+    'small':  (min-width: 768px),
+    'medium': (min-width: 992px),
+    'large': (min-width: 1200px)
+) !global;

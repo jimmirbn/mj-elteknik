@@ -1,0 +1,24 @@
+{
+  "name": "mj-elteknik",
+  "version": "0.1.0",
+  "homepage": "",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~1.11.1",
+    "bourbon": "~4.2.6",
+    "lodash": "~3.10.1"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.6",
+    "responsive-lightbox": "*"
+  }
+}
