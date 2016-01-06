@@ -24,7 +24,7 @@ define('DOMAIN',$_SERVER['HTTP_HOST']);
 // environment urls WITHOUT protocol
 $localurl = 'local.mj-elteknik.dk';
 $stagingurl = 'mj-elteknik.plantplant.dk';
-$productionurl = '';
+$productionurl = 'mj-elteknik.dk';
 
 // TESTING - bugherd project key - comment in #63 and optionally #49
 // $bugherdProjectKey = "[project_key]";
@@ -42,10 +42,10 @@ switch($_SERVER['HTTP_HOST']) {
         $url = PROTOCOL . $localurl;
         define('WP_HOME', $url);
         define('WP_SITEURL', $url.'/wordpress');
-        define('DB_NAME', 'mj-elteknik');
-        define('DB_USER', 'root');
-        define('DB_PASSWORD', 'root');
-        define('DB_HOST', 'localhost');
+        define('DB_NAME', 'mj_elteknik_dk');
+        define('DB_USER', 'mj-elteknik.dk');
+        define('DB_PASSWORD', 'G3oA00ee');
+        define('DB_HOST', 'mysql12.cliche.dk');
         define('ENVIRONMENT', 'local');
         define('WP_DEBUG', true);
 
@@ -58,10 +58,10 @@ switch($_SERVER['HTTP_HOST']) {
         $url = PROTOCOL . $stagingurl;
         define('WP_HOME', $url);
         define('WP_SITEURL', $url.'/wordpress');
-        define('DB_NAME', '');
-        define('DB_USER', '');
-        define('DB_PASSWORD', '');
-        define('DB_HOST', 'db.plnt.dk');
+        define('DB_NAME', 'mj_elteknik_dk');
+        define('DB_USER', 'mj-elteknik.dk');
+        define('DB_PASSWORD', 'G3oA00ee');
+        define('DB_HOST', 'mysql12.cliche.dk');
         define('ENVIRONMENT', 'staging');
         define('WP_DEBUG', false);
 
@@ -75,10 +75,10 @@ switch($_SERVER['HTTP_HOST']) {
         $url = PROTOCOL . $_SERVER['HTTP_HOST'];
         define('WP_HOME', PROTOCOL . $_SERVER['HTTP_HOST']);
         define('WP_SITEURL', PROTOCOL . $_SERVER['HTTP_HOST'].'/wordpress');
-        define('DB_NAME', '');
-        define('DB_USER', '');
-        define('DB_PASSWORD', '');
-        define('DB_HOST', 'db.plnt.dk');
+        define('DB_NAME', 'mj_elteknik_dk');
+        define('DB_USER', 'mj-elteknik.dk');
+        define('DB_PASSWORD', 'G3oA00ee');
+        define('DB_HOST', 'mysql12.cliche.dk');
         define('ENVIRONMENT', 'production');
         define('WP_DEBUG', false);
 
